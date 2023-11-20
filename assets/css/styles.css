@@ -335,7 +335,7 @@ h2,
 .h2 {
   font-family: "Poppins", sans-serif;
   font-size: 140px;
-  line-height: 1.23;
+  line-height: 0.76;
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
@@ -614,7 +614,12 @@ a.btn-2:disabled, a.btn-2[disabled] {
   padding: 9px 0 30px;
 }
 .page #home {
-  margin-top: 112px;
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .page #home {
+    margin-top: 112px;
+  }
 }
 .page #home::before {
   top: 0;

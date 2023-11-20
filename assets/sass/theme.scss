@@ -45,7 +45,10 @@
     	padding: 9px 0 30px;
 	}
 	#home{
-		margin-top: 112px;
+		margin-top: 50px;
+		@media (min-width: 768px) {
+			margin-top: 112px;
+		}
 		&::before{
 			top: 0;
 			left: 0;
