@@ -1,0 +1,271 @@
+/* Theme default */
+  
+$font-family:  'Poppins', sans-serif;
+$font-family-base:  'Poppins', sans-serif;
+$font-family-button:  'Poppins', sans-serif;
+$color-white: #fff;
+$color-black: #2F2F2F;
+$color-yellow: #FFC903;
+$color-red: #F68B98;
+$background-color: #275EEC;
+$color-orange: #FF6F0D;
+$color-brown: #7A7050;
+$color-pink: #FF17E7;
+
+
+
+//font size default
+
+$font-size-h1:  145px; 
+$font-size-h2:  140px; 
+$font-size-h3:  26px; 
+$font-size-h4:  21px; 
+$font-size-h5:  16px;
+$font-size-h6:  14px; 
+
+body, p {
+	font-family: $font-family;
+	font-size: 21px;
+	line-height: 34px;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1,
+.h1 {
+  font-family: $font-family-base;
+  font-size: $font-size-h1;
+  line-height: 1.17;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2,
+.h2 {
+  font-family: $font-family-base;
+  font-size: $font-size-h2;
+  line-height: 1.23;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-family: $font-family-base;
+  font-size: $font-size-h3;
+  line-height: 50px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4,
+.h4 {
+  font-family: $font-family-base;
+  font-size: $font-size-h4;
+  line-height: 40px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h5,
+.h5 {
+  font-family: $font-family-base;
+  font-size: $font-size-h5;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h6,
+.h6 {
+  font-family: $font-family-button;
+  font-size: $font-size-h6;
+  line-height: 23px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (max-width: 1024px) {
+	h1, .h1 {
+		font-size: calc(#{$font-size-h1} * 0.9);
+	}
+	h2, .h2 {
+		font-size: calc(#{$font-size-h2} * 0.7);
+	}
+}
+
+@media (max-width: 450px) {
+	h1, .h1 {
+		font-size: calc(#{$font-size-h1} * 0.4);
+	}
+	h2, .h2 {
+		font-size: calc(#{$font-size-h2} * 0.4);
+	}
+}
+
+// Links
+// -------------------------
+a {
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $color-black;
+  a {
+    transition: .3s all ease;
+  }
+}
+a {
+	transition: .3s all ease;
+	color: $color-black;
+	&:hover{
+		color: $color-brown;
+	}
+}
+
+// Helpers
+// -------------------------
+
+.invert {
+	b, p, a, li,
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+	  color: $color-white;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1690px;
+	}
+}
+
+input,
+select{
+	outline: none;
+}
+// Primary Button
+// -------------------------
+.invert .primary-btn,
+.primary-btn{
+	display: inline-block;
+	position: relative;
+	padding: 15px 34px;
+	@media (max-width: 425px) {
+		width: 100%;
+		padding: 13px 20px;
+		text-align: center;
+	}
+	background: $color-pink;
+	color: $color-white;
+	border: 0;
+	transition: .3s all ease;
+	font-family: $font-family-button;
+	font-size: $font-size-h4;
+	font-weight: bold;
+	text-transform: uppercase;
+	&:hover{
+		background: $color-white;
+		color: $color-pink;
+		text-decoration: none;
+	}
+	&:active,
+	&:focus{
+		background: $color-white;
+		color: $color-pink;
+		svg{
+			fill: $color-white;
+		}
+	}
+	&:disabled,
+	&[disabled]{
+		opacity: 0.5;
+	}
+	svg{
+		transition: .3s all ease;
+		fill: $color-white;
+		margin-right: 7px;
+	}
+}
+
+a.btn-1 {
+	background-color: $color-white;
+	color: #1872E6;
+	text-shadow: 0px 2px 14px #A3A5FE;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	
+}
+a.btn-1 {
+	&:hover{
+		background: #1872E6;
+		color: $color-white;
+		text-decoration: none;
+		text-shadow: 0px 2px 16px rgba(21, 27, 227, 0.80);
+	}
+	&:active,
+	&:focus{
+		background: #1872E6;
+		color: $color-white;
+		text-shadow: 0px 2px 16px rgba(21, 27, 227, 0.80);
+	}
+	&:disabled,
+	&[disabled]{
+		opacity: 0.5;
+	}
+}
+a.btn-2{
+	color: #FFF;
+	background-color: #1872E6;
+	text-shadow: 0px 2px 16px rgba(21, 27, 227, 0.80);
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+a.btn-2 {
+	&:hover{
+		background: $color-white;
+		color: #1872E6;
+		text-decoration: none;
+		text-shadow: 0px 2px 14px #A3A5FE;
+	}
+	&:active,
+	&:focus{
+		background: $color-white;
+		color: #1872E6;
+		text-shadow: 0px 2px 14px #A3A5FE;
+	}
+	&:disabled,
+	&[disabled]{
+		opacity: 0.5;
+	}
+}
+.fullwidth{
+	width: 100%;
+	text-align: center;
+}
