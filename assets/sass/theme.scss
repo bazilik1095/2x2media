@@ -198,7 +198,9 @@
 				margin-bottom: 25px;
 			}
 			&-mob{
+				margin-top: -25px;
 				@media (max-width: 998px) {
+					margin-top: 0;
 					position: relative;
 					background-image: url(../images/bg-overlay.jpg);
 					background-repeat: no-repeat;
@@ -292,10 +294,11 @@
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-image: url(../images/overlay.svg);
-			background-repeat: repeat-x;
-			background-repeat-y: repeat;
-			opacity: 0.1;
+			background-image: url(../images/footer_parallax.svg);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 
 		&::after{
