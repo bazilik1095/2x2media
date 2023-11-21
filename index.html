@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" type="image/png" href="assets/images/fav.svg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
@@ -98,7 +99,7 @@
             <div class="container">
                 <div class="row"> 
                     <div class="col-lg-6 col-md-12 invert">
-                        <h2>Double Impact Amplify <span>Success</span></h2>
+                        <h2 class="wow animate__animated animate__fadeInUp">Double Impact Amplify <span>Success</span></h2>
                         <p>Welcome to 2x2, where success is doubled. Our innovative approach and expert team ensure extraordinary results in advertising.</p>
                         <a href="#" class="primary-btn">Join 2x2</a>
                     </div>
@@ -190,7 +191,7 @@
                             <!-- Provide the path to your video file -->
                             <!-- <source src="assets/images/about-video.mp4" type="video/mp4"> -->
                         <!-- </video> -->
-                            <h2>Why work with </br>2x2 Media?</h2>
+                            <h2 class="wow animate__animated animate__fadeInUp">Why work with </br>2x2 Media?</h2>
                         </div>
                         <div class="features">
                             <h3><svg xmlns="http://www.w3.org/2000/svg">
@@ -220,11 +221,44 @@
                 </div>
             </div>
         </section>
+        <section id="work" class="page-section">
+            <div class="background-overlay"></div>
+            <div class="work-container invert">
+                <a href="#" class="primary-btn btn-2">Join 2x2</a>
+                <h4>Explore profitable verticals with 2x2 Media expertise and advanced solutions.</h4>
+                <h2 class="wow animate__animated animate__fadeInUp"><span>Verticals we </span> <span>work with</span></h2>
+            </div>
+            <div class="container-fluid invert">
+                <div class="row"> 
+                    <div class="col-md-12 col-lg-5"></div>
+                    <div class="col-md-12 col-lg-7 work-features">
+                        <div class="row">
+                        <div class="col-md-12 col-lg-6"></div>
+                            <div class="col-md-12 col-lg-6 work-features-mob">
+                                <div class="features wow animate__animated animate__fadeInUp">
+                                    <h3>Antiviruses</h3>
+                                    <h3>Dating</h3>
+                                    <h3>Nutra</h3>
+                                    <h3>VOD</h3>
+                                    <h3>Streaming</h3>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="information text-center">
+        <div class="container text-center invert">
+            <div class="footer-wrap">
+                <img class="logo-footer wow animate__animated animate__fadeInUp" src="assets/images/logo-footer.svg" alt="logo-footer">
+                <h3>It's time to elevate your digital game!</h3>
+                <a href="#" class="primary-btn btn-1">Log In</a>
+                <a href="#" class="primary-btn btn-2">Join 2x2</a>
+            </div>
+            <div class="information">
                 <a href ="#"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="69" viewBox="0 0 74 69" fill="none">
                         <g filter="url(#filter0_d_355_350)">
                         <path d="M33.987 37.0365L33.5238 43.4064C34.1865 43.4064 34.4735 43.128 34.8177 42.7938L37.9246 39.8906L44.3624 44.5003C45.5431 45.1437 46.3749 44.8049 46.6934 43.4383L50.9192 24.0777L50.9204 24.0766C51.2949 22.3701 50.2892 21.7027 49.1388 22.1214L24.2999 31.4195C22.6047 32.0629 22.6304 32.9869 24.0117 33.4055L30.3621 35.3368L45.1126 26.3124C45.8068 25.863 46.4379 26.1117 45.9188 26.5611L33.987 37.0365Z"/>
@@ -272,6 +306,10 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>   
     <script type="text/javascript" src="assets/js/main.js"></script> 
     <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
        
 </body>
 </html> 

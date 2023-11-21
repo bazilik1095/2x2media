@@ -19,8 +19,8 @@ $color-pink: #FF17E7;
 $font-size-h1:  145px; 
 $font-size-h2:  140px; 
 $font-size-h3:  58px; 
-$font-size-h4:  21px; 
-$font-size-h5:  16px;
+$font-size-h4:  28px; 
+$font-size-h5:  21px;
 $font-size-h6:  14px; 
 
 body, p {
@@ -65,8 +65,8 @@ h4,
 .h4 {
   font-family: $font-family-base;
   font-size: $font-size-h4;
-  line-height: 40px;
-  font-weight: 900;
+  line-height: 34px;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -95,6 +95,9 @@ h6,
 	h2, .h2 {
 		font-size: calc(#{$font-size-h2} * 0.7);
 	}
+	h3, .h3 {
+		font-size: calc(#{$font-size-h3} * 0.7);
+	}
 }
 
 @media (max-width: 450px) {
@@ -102,7 +105,7 @@ h6,
 		font-size: calc(#{$font-size-h1} * 0.4);
 	}
 	h2, .h2 {
-		font-size: calc(#{$font-size-h2} * 0.4);
+		font-size: calc(#{$font-size-h2} * 0.3);
 	}
 	h3, .h3 {
 		font-size: calc(#{$font-size-h3} * 0.5);
@@ -168,7 +171,6 @@ select{
 }
 // Primary Button
 // -------------------------
-.invert .primary-btn,
 .primary-btn{
 	display: inline-block;
 	position: relative;
