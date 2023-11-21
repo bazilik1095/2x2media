@@ -20,6 +20,10 @@
 			&.social:first-child{
 				margin-right: 0;
 			}
+			.primary-btn{
+				font-size: 18px;
+				line-height: normal;
+			}
 		}
 	}
 
@@ -54,8 +58,7 @@
 		position: relative;
 		background-image: url(../images/bg-1.svg);
 		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		background-position: top left;
 		@media (min-width: 768px) {
 			padding-top: 223px;
 		}
@@ -98,6 +101,7 @@
 		}
 		h2{
 			background-image: url(../images/animation.gif);
+			background-position: center;
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -119,8 +123,8 @@
 			}
 		}
 		.figure{
-			animation: 3s linear 0s normal none infinite running rot;
-			-webkit-animation: 3s linear 0s normal none infinite running rot;
+			animation: 7s linear 0s normal none infinite running rot;
+			-webkit-animation: 7s linear 0s normal none infinite running rot;
 			position: absolute;
 			&-1{
 				right: 6%;
@@ -214,10 +218,12 @@
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-image: url(../images/overlay.svg);
-			background-repeat: repeat-x;
-			background-repeat-y: repeat;
-			opacity: 0.1;
+			//background-image: url(../images/overlay.svg);
+			background-image: url(../images/parallax.svg);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 
 		}
 		.work-container{
@@ -275,6 +281,10 @@
 	}
 	.footer{
 		position: relative;
+		.container{
+			position: relative;
+			z-index: 1;
+		}
 		&::before{
 			content: '';
 			position: absolute;
@@ -287,17 +297,17 @@
 			background-repeat-y: repeat;
 			opacity: 0.1;
 		}
-		// &::after{
-		// 	content: '';
-		// 	position: absolute;
-		// 	width: 806px;
-		// 	height: 789;
-		// 	bottom: 0;
-		// 	left: 50%;
-		// 	transform: translateX(-50%);
-		// 	background-image: url(../images/after.svg);
-		// 	background-repeat: no-repeat;
-		// }
+
+		&::after{
+			content: '';
+			position: absolute;
+			width: 806px;
+			height: 789px;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background: linear-gradient(180deg, #9F08ED 0%, #F49463 100%);
+		}
 		&-wrap{
 			padding-top: 157px;
 			padding-bottom: 50px;

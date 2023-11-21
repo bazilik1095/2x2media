@@ -81,7 +81,7 @@
                                             </svg>
                                    </a> </li>
                                     <li><a href="#" class="primary-btn btn-1">Log In</a></li>
-                                    <li><a href="#" class="primary-btn btn-2">Join 2x2</a></li>
+                                    <li><a href="#" class="primary-btn">Join 2x2</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -103,10 +103,11 @@
                     <div class="col-lg-6 col-md-12 animation">
                         <css-doodle>
                             :doodle {
-                              @grid: 12 / 100vmin 100vmin;
+                              @grid: 12 / 100vmin 80vmin;
                               perspective: 90vmin;
-                              perspective-origin: 0% -100%;
-                              transform: scale(0.8);
+                              perspective-origin: 0% -140%;
+                              transform: scale(.8);
+                              contain: none;
                             }
                           
                             :container {
@@ -131,7 +132,7 @@
                             :after {
                               content: '';
                               @size: calc(var(--size) * 10%);
-                              background: @p(#00b8a9, #fff, #fff, #fff);
+                              background: @p(#2BF8F8, #FF38E5, #F9B03D, #2BF8F8);
                             }
                           
                             position: absolute;
@@ -219,7 +220,6 @@
             </div>
         </section>
         <section id="work" class="page-section">
-            <div class="background-overlay"></div>
             <div class="work-container invert">
                 <a href="#" class="primary-btn btn-2">Join 2x2</a>
                 <h4>Explore profitable verticals with 2x2 Media expertise and advanced solutions.</h4>
