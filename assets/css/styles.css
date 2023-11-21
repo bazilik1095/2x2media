@@ -662,7 +662,7 @@ a.btn-2:disabled, a.btn-2[disabled] {
 }
 @media (min-width: 768px) {
   .page #home h2 {
-    margin-bottom: 75px;
+    margin-bottom: 45px;
   }
 }
 .page #home h2 span {
@@ -675,7 +675,7 @@ a.btn-2:disabled, a.btn-2[disabled] {
 @media (min-width: 1024px) {
   .page #home .animation {
     position: absolute;
-    top: 0;
+    top: -15%;
     right: 0;
   }
 }

@@ -69,7 +69,7 @@
 			margin-bottom: 30px;
 			line-height: 0.8;
 			@media (min-width: 768px) {
-				margin-bottom: 75px;
+				margin-bottom: 45px;
 			}
 			span{
 				color: $color-orange;
@@ -82,7 +82,7 @@
 		.animation{
 			@media (min-width: 1024px) {
 				position: absolute;
-				top: 0;
+				top: -15%;
 				right: 0;
 			}
 		}
