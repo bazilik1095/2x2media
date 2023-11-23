@@ -888,11 +888,11 @@ a.btn-2:disabled, a.btn-2[disabled] {
   background-image: url(../images/parallax.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 @media (min-width: 768px) {
   .page #work::before {
     background-attachment: fixed;
+    background-size: cover;
   }
 }
 .page #work .work-container {
@@ -975,11 +975,11 @@ a.btn-2:disabled, a.btn-2[disabled] {
   background-image: url(../images/footer_parallax.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 @media (min-width: 768px) {
   .page .footer::before {
     background-attachment: fixed;
+    background-size: cover;
   }
 }
 .page .footer::after {

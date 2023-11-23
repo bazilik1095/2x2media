@@ -259,10 +259,10 @@
 			background-image: url(../images/parallax.svg);
 			@media (min-width: 768px) {
 				background-attachment: fixed;
+				background-size: cover;
 			}
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
 
 		}
 		.work-container{
@@ -339,10 +339,10 @@
 			background-image: url(../images/footer_parallax.svg);
 			@media (min-width: 768px) {
 				background-attachment: fixed;
+				background-size: cover;
 			}
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
 		}
 
 		&::after{
