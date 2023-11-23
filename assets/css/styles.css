@@ -837,7 +837,7 @@ a.btn-2:disabled, a.btn-2[disabled] {
   overflow: hidden;
 }
 .page #work .work-features {
-  min-height: 850px;
+  min-height: 870px;
 }
 @media (min-width: 767px) {
   .page #work .work-features {
@@ -875,7 +875,7 @@ a.btn-2:disabled, a.btn-2[disabled] {
   .page #work .work-features-mob {
     margin-top: 0;
     position: relative;
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
 .page #work::before {
@@ -886,10 +886,14 @@ a.btn-2:disabled, a.btn-2[disabled] {
   top: 0;
   left: 0;
   background-image: url(../images/parallax.svg);
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .page #work::before {
+    background-attachment: fixed;
+  }
 }
 .page #work .work-container {
   padding-left: 20px;
@@ -969,10 +973,14 @@ a.btn-2:disabled, a.btn-2[disabled] {
   top: 0;
   left: 0;
   background-image: url(../images/footer_parallax.svg);
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .page .footer::before {
+    background-attachment: fixed;
+  }
 }
 .page .footer::after {
   content: "";
@@ -1001,8 +1009,13 @@ a.btn-2:disabled, a.btn-2[disabled] {
   margin-bottom: 47px;
 }
 .page .footer-wrap .primary-btn {
-  margin: 10px 0;
+  margin: 10px;
   font-size: 12px;
+}
+@media (max-width: 465px) {
+  .page .footer-wrap .primary-btn {
+    min-width: 88px;
+  }
 }
 @media (min-width: 998px) {
   .page .footer-wrap .primary-btn {

@@ -220,7 +220,7 @@
 		background: linear-gradient(180deg, #E2A631 0%, #BD0CBB 100%);
 		overflow: hidden;
 		.work-features{
-			min-height: 850px;
+			min-height: 870px;
 			@media (min-width: 767px) {
 				min-height: 994px;
 			}
@@ -243,7 +243,7 @@
 				@media (max-width: 998px) {
 					margin-top: 0;
 					position: relative;
-					padding-top: 30px;
+					padding-top: 50px;
 				}
 
 			}
@@ -257,7 +257,9 @@
 			left: 0;
 			//background-image: url(../images/overlay.svg);
 			background-image: url(../images/parallax.svg);
-			background-attachment: fixed;
+			@media (min-width: 768px) {
+				background-attachment: fixed;
+			}
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -335,7 +337,9 @@
 			top: 0;
 			left: 0;
 			background-image: url(../images/footer_parallax.svg);
-			background-attachment: fixed;
+			@media (min-width: 768px) {
+				background-attachment: fixed;
+			}
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -363,7 +367,10 @@
     			margin-bottom: 47px;
 			}
 			.primary-btn{
-				margin: 10px 0;
+				margin: 10px;
+				@media (max-width: 465px) {
+					min-width: 88px;
+				}
 				@media (min-width: 998px) {
 					margin: 0 15px;
 				}
