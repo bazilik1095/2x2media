@@ -122,21 +122,6 @@ h6,
 	h2, .h2 {
 		font-size: calc(#{$font-size-h2} * 0.7);
 	}
-	h3, .h3 {
-		font-size: calc(#{$font-size-h3} * 0.7);
-	}
-}
-
-@media (max-width: 450px) {
-	h1, .h1 {
-		font-size: calc(#{$font-size-h1} * 0.4);
-	}
-	h2, .h2 {
-		font-size: calc(#{$font-size-h2} * 0.5);
-	}
-	h3, .h3 {
-		font-size: calc(#{$font-size-h3} * 0.5);
-	}
 }
 
 @media (max-width: 450px) {
@@ -146,7 +131,14 @@ h6,
 	h2, .h2 {
 		font-size: calc(#{$font-size-h2} * 0.4);
 	}
+	h3, .h3 {
+		font-size: 48px;
+	}
+	h4,p, .h4{
+		font-size: 18px;
+	}
 }
+
 
 // Links
 // -------------------------
