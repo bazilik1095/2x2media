@@ -45,7 +45,7 @@ $color-pink: #FF17E7;
 
 $font-size-h1:  145px; 
 $font-size-h2:  140px; 
-$font-size-h3:  58px; 
+$font-size-h3:  40px; 
 $font-size-h4:  28px; 
 $font-size-h5:  21px;
 $font-size-h6:  14px; 
@@ -130,9 +130,6 @@ h6,
 	}
 	h2, .h2 {
 		font-size: calc(#{$font-size-h2} * 0.4);
-	}
-	h3, .h3 {
-		font-size: 48px;
 	}
 	h4,p, .h4{
 		font-size: 18px;
